@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingsFragment"
+    android:orientation="vertical"
+    android:background="@color/dark_blue">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Dark Mode"
+        android:textSize="25dp"
+        android:textOn="On"
+        android:textOff="Off"
+        app:showText="true"
+        android:textStyle="bold"
+        app:switchPadding="30dp"
+        app:thumbTextPadding="20dp"
+        android:textColor="@color/white"
+        android:thumb="@drawable/switch_thumb"
+        app:track="@drawable/switch_track"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch2"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:text="Language"
+        android:textSize="25dp"
+        android:textOn="Greek"
+        android:textOff="English"
+        app:showText="true"
+        android:textStyle="bold"
+        app:switchPadding="30dp"
+        app:thumbTextPadding="20dp"
+        android:thumb="@drawable/switch_thumb"
+        app:track="@drawable/switch_track"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="26dp"
+        android:text="Change User details"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="200dp"
+        android:hint="Username"
+        android:textSize="30sp"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginVertical="260dp"
+        android:layout_marginHorizontal="20dp"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_marginVertical="320dp"
+        android:layout_marginHorizontal="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/change_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="390dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="108dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Change" />
+
+    <Button
+        android:id="@+id/delete_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="500dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="108dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Delete Account" />
+
+
+</RelativeLayout>
